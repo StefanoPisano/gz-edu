@@ -1,0 +1,3 @@
+[submodule "gz-notifications"]
+	path = gz-notifications
+	url = git@github.com:StefanoPisano/gz-notifications.git
