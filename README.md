@@ -5,3 +5,6 @@ Check https://github.com/StefanoPisano/gz-notifications to understand how to set
 
 ## How To
 Simply run `./gz-edu.sh <CHAT ID>`, replacing `<CHAT ID>` with the chat id.
+
+## Tip
+You can schedule it to get a daily culture article!
