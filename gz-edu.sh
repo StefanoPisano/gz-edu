@@ -4,9 +4,9 @@ heading="👋 *gz-edu*:"
 greetings=""
 
 if [ `date +%P` = "am" ]; then 
-greetings="Buongiorno!"; 
+greetings="Good Morning!"; 
 else 
-greetings="Buonasera!"; fi
+greetings="Good Evening!"; fi
 
 random_wiki_title=$( curl -s "https://en.wikipedia.org/w/api.php?action=query&format=json&list=random&rnnamespace=0&rnlimit=1" | jq '.query.random[0].title')
 
@@ -17,4 +17,4 @@ wiki_url="[${random_wiki_title}](https://en.wikipedia.org/wiki/${random_wiki})"
 
 ./gz-notifications/gz-notifications.sh $1 "${heading} ${greetings} 
 
-Ecco un  interessante articolo che ho trovato girovagando per il web: ${wiki_url}"
+Here you are an interesting article I found in the internet: ${wiki_url}"
